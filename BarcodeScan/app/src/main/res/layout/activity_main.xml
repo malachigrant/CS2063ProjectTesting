@@ -7,21 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check Image"/>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content" />
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="640px"
+        android:layout_height="480px" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="hm"
+        android:scrollbars="vertical"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
