@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BookOrganizer.iml" filepath="$PROJECT_DIR$/BookOrganizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BarcodeScan.iml" filepath="$PROJECT_DIR$/BarcodeScan.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
