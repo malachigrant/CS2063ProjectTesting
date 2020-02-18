@@ -1,0 +1,676 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 499,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "5LwdEs9OkccC",
+      "etag": "hKX4jew4t/s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5LwdEs9OkccC",
+      "volumeInfo": {
+        "title": "The Potato Treasure of the Andes",
+        "subtitle": "From Agriculture to Culture",
+        "authors": [
+          "Christine Graves"
+        ],
+        "publisher": "International Potato Center",
+        "publishedDate": "2001",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9290602058"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789290602057"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 208,
+        "printType": "BOOK",
+        "categories": [
+          "Indians of South America"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=5LwdEs9OkccC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=5LwdEs9OkccC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=5LwdEs9OkccC&printsec=frontcover&dq=intitle:Potato&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=5LwdEs9OkccC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Potato_Treasure_of_the_Andes.html?hl=&id=5LwdEs9OkccC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=5LwdEs9OkccC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "xzIyd_LSWaQC",
+      "etag": "iOIvUpC0oLE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/xzIyd_LSWaQC",
+      "volumeInfo": {
+        "title": "Potato Seed Production for Tropical Africa",
+        "publisher": "International Potato Center",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=xzIyd_LSWaQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=xzIyd_LSWaQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=xzIyd_LSWaQC&printsec=frontcover&dq=intitle:Potato&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=xzIyd_LSWaQC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Potato_Seed_Production_for_Tropical_Afri.html?hl=&id=xzIyd_LSWaQC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=xzIyd_LSWaQC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-7-hmoky01UC",
+      "etag": "ufKAqCOpqaU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-7-hmoky01UC",
+      "volumeInfo": {
+        "title": "Systematic Botany and Morphology of the Potato",
+        "publisher": "International Potato Center",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-7-hmoky01UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-7-hmoky01UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=-7-hmoky01UC&printsec=frontcover&dq=intitle:Potato&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=-7-hmoky01UC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Systematic_Botany_and_Morphology_of_the.html?hl=&id=-7-hmoky01UC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=-7-hmoky01UC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WYT1S7qhn4sC",
+      "etag": "4w8OPR01vf8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WYT1S7qhn4sC",
+      "volumeInfo": {
+        "title": "Potato Science and Technology",
+        "authors": [
+          "G. Lisinska",
+          "W. Leszczynski"
+        ],
+        "publisher": "Springer Science & Business Media",
+        "publishedDate": "1989-07-31",
+        "description": "This book is an excellent starting point for students and should be read by all concerned with the industry, researchers, growers, traders and processors - Journal of Agricultural Science.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "185166307X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781851663071"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 391,
+        "printType": "BOOK",
+        "categories": [
+          "Technology & Engineering"
+        ],
+        "averageRating": 5.0,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.1.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WYT1S7qhn4sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WYT1S7qhn4sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=WYT1S7qhn4sC&printsec=frontcover&dq=intitle:Potato&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=WYT1S7qhn4sC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Potato_Science_and_Technology.html?hl=&id=WYT1S7qhn4sC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.ca/books/download/Potato_Science_and_Technology-sample-epub.acsm?id=WYT1S7qhn4sC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.ca/books/download/Potato_Science_and_Technology-sample-pdf.acsm?id=WYT1S7qhn4sC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WYT1S7qhn4sC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book is an excellent starting point for students and should be read by all concerned with the industry, researchers, growers, traders and processors - Journal of Agricultural Science."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WC4iAQAAMAAJ",
+      "etag": "SU8EwjARUZA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WC4iAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Some Fungous Diseases of the Sweet Potato",
+        "authors": [
+          "Byron David Halsted"
+        ],
+        "publishedDate": "1890",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UIUC:30112019729760"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 32,
+        "printType": "BOOK",
+        "categories": [
+          "Fungal diseases of plants"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WC4iAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WC4iAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=WC4iAQAAMAAJ&pg=PP1&dq=intitle:Potato&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=WC4iAQAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=WC4iAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=WC4iAQAAMAAJ&rdid=book-WC4iAQAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.ca/books/download/Some_Fungous_Diseases_of_the_Sweet_Potat.pdf?id=WC4iAQAAMAAJ&hl=&output=pdf&sig=ACfU3U3Yo9N2U6IKNidQtxeaK6fmjLd15g&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WC4iAQAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BbaADQAAQBAJ",
+      "etag": "A+KvkAU1qWE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BbaADQAAQBAJ",
+      "volumeInfo": {
+        "title": "Sustainable Potato Production and the Impact of Climate Change",
+        "authors": [
+          "Londhe, Sunil"
+        ],
+        "publisher": "IGI Global",
+        "publishedDate": "2016-11-15",
+        "description": "The potato is a significant food around the globe in the grand scheme of consumption. However, changes in the Earth\u0092s climate are threatening to negatively impact the growth and production of agriculture, namely potatoes, which in turn will greatly alter the dimensions of food. Sustainable Potato Production and the Impact of Climate Change is an authoritative publication that provides the latest research on potato production in the future climate change scenario. Featuring exhaustive coverage on a variety of topics associated with food fundamentals such as, availability, stability, utilization, and accessibility, this reference work is an essential source for professionals, researchers and students seeking current research on the importance of potato cultivation.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781522517160"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1522517162"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 323,
+        "printType": "BOOK",
+        "categories": [
+          "Technology & Engineering"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BbaADQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BbaADQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=BbaADQAAQBAJ&printsec=frontcover&dq=intitle:Potato&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=BbaADQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BbaADQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 238.11,
+          "currencyCode": "CAD"
+        },
+        "retailPrice": {
+          "amount": 190.49,
+          "currencyCode": "CAD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=BbaADQAAQBAJ&rdid=book-BbaADQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 2.3811E8,
+              "currencyCode": "CAD"
+            },
+            "retailPrice": {
+              "amountInMicros": 1.9049E8,
+              "currencyCode": "CAD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.ca/books/download/Sustainable_Potato_Production_and_the_Im-sample-pdf.acsm?id=BbaADQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BbaADQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Featuring exhaustive coverage on a variety of topics associated with food fundamentals such as, availability, stability, utilization, and accessibility, this reference work is an essential source for professionals, researchers and students ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Tr8XAwAAQBAJ",
+      "etag": "AypUypQNZb4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Tr8XAwAAQBAJ",
+      "volumeInfo": {
+        "title": "One Potato, Two Potatoes",
+        "authors": [
+          "Margaret Mendel"
+        ],
+        "publisher": "Lulu.com",
+        "publishedDate": "2009-01-04",
+        "description": "A potato recipe book with an added element of a short story. To make peace with one's childhood seems a life long endeavor for some people. For this author and cook it was the potato that she had to recon with.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780557030897"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0557030897"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 95,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Tr8XAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Tr8XAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=Tr8XAwAAQBAJ&printsec=frontcover&dq=intitle:Potato&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=Tr8XAwAAQBAJ&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/One_Potato_Two_Potatoes.html?hl=&id=Tr8XAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Tr8XAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A potato recipe book with an added element of a short story. To make peace with one&#39;s childhood seems a life long endeavor for some people. For this author and cook it was the potato that she had to recon with."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "EePNniHaROoC",
+      "etag": "vdNumiAAMIo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/EePNniHaROoC",
+      "volumeInfo": {
+        "title": "The Potato in the Human Diet",
+        "authors": [
+          "Jennifer A. Woolfe",
+          "Susan V. Poats"
+        ],
+        "publisher": "Cambridge University Press",
+        "publishedDate": "1987-03-19",
+        "description": "The book reviews the knowledge about the nutritional value of the potato and its role in the nutrition of both children and adults.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0521326699"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780521326698"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 231,
+        "printType": "BOOK",
+        "categories": [
+          "Nature"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=EePNniHaROoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=EePNniHaROoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=EePNniHaROoC&printsec=frontcover&dq=intitle:Potato&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=EePNniHaROoC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Potato_in_the_Human_Diet.html?hl=&id=EePNniHaROoC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=EePNniHaROoC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The book reviews the knowledge about the nutritional value of the potato and its role in the nutrition of both children and adults."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "oM6l8usknfkC",
+      "etag": "ZcEcs+ncQ/Y",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/oM6l8usknfkC",
+      "volumeInfo": {
+        "title": "Potato Developments in a Changing Europe",
+        "authors": [
+          "Norbert U. Haase",
+          "A. J. Haverkort"
+        ],
+        "publisher": "Wageningen Academic Pub",
+        "publishedDate": "2006",
+        "description": "This book discusses developments in the potato industry in a rapidly changing Europe. The European Union expanded recently with ten additional countries of which many are major potato producing countries. The papers in this book reflect societal and commercial changes such as consumer behaviour and marketing aspects in relation to fresh and processed potatoes in western, central and eastern Europe. Seed trade between western and central Europe is entering a new stage with altered inspection requirements, quarantine regulations and variety needs and acceptance.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9789086860111"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "9086860117"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 278,
+        "printType": "BOOK",
+        "categories": [
+          "Technology & Engineering"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=oM6l8usknfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=oM6l8usknfkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=oM6l8usknfkC&printsec=frontcover&dq=intitle:Potato&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=oM6l8usknfkC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Potato_Developments_in_a_Changing_Europe.html?hl=&id=oM6l8usknfkC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=oM6l8usknfkC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "www.wageningenacademic.com/potato2006"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XZuHnnKh80wC",
+      "etag": "RyGfbPYMgMI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XZuHnnKh80wC",
+      "volumeInfo": {
+        "title": "Production and Utilization of True Potato Seed in Asia",
+        "subtitle": "Proceedings of the Inter-Regional Workshop at the Central Potato Research Station, Modipuram, India, January 21-30, 1995",
+        "publisher": "International Potato Center",
+        "publishedDate": "1996",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9290601868"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789290601869"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 233,
+        "printType": "BOOK",
+        "categories": [
+          "Potatoes"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XZuHnnKh80wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XZuHnnKh80wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=XZuHnnKh80wC&printsec=frontcover&dq=intitle:Potato&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.ca/books?id=XZuHnnKh80wC&dq=intitle:Potato&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Production_and_Utilization_of_True_Potat.html?hl=&id=XZuHnnKh80wC"
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XZuHnnKh80wC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
