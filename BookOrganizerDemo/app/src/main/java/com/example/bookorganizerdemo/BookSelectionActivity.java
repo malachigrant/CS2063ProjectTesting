@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.bookorganizerdemo.model.Book;
@@ -41,7 +42,7 @@ public class BookSelectionActivity extends AppCompatActivity {
         @NonNull
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            TextView v = (TextView) LayoutInflater.from(parent.getContext())
+            RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_layout, parent, false);
             return new ViewHolder(v);
         }
@@ -51,8 +52,9 @@ public class BookSelectionActivity extends AppCompatActivity {
             Book book = mDataset.get(position);
 
             holder.mTextView.setText(book.getTitle());
+            holder.mAuthorTextView.setText(book.getAuthor());
 
-            holder.mTextView.setOnClickListener(view -> {
+            holder.mView.setOnClickListener(view -> {
                 Intent result = new Intent();
                 result.putExtra("bookSelected", book);
                 setResult(Activity.RESULT_OK, result);
@@ -66,11 +68,15 @@ public class BookSelectionActivity extends AppCompatActivity {
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
+            public View mView;
             public TextView mTextView;
+            public TextView mAuthorTextView;
 
-            public ViewHolder(TextView textView) {
-                super(textView);
-                mTextView = textView;
+            public ViewHolder(View itemView) {
+                super(itemView);
+                mView = itemView;
+                mTextView = itemView.findViewById(R.id.item_textview);
+                mAuthorTextView = itemView.findViewById(R.id.item_author_textview);
             }
         }
     }

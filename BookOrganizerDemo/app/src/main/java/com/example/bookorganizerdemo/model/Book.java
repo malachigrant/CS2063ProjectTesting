@@ -3,11 +3,14 @@ package com.example.bookorganizerdemo.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.annotation.NonNull;
-
-import java.io.Serializable;
-
 public class Book implements Parcelable {
+    public enum SortType {
+        TITLE_A_Z,
+        TITLE_Z_A,
+        AUTHOR_A_Z,
+        AUTHOR_Z_A
+    }
+
     private final String id;
     private final String title;
     private final String author;
@@ -71,7 +74,21 @@ public class Book implements Parcelable {
         return 0;
     }
 
-    public int compare(Book other) {
-        return this.title.compareTo(other.title);
+    public int compare(Book other, SortType sortType) {
+        int tempResult = 0;
+        switch (sortType) {
+            case TITLE_A_Z:
+            case TITLE_Z_A:
+                tempResult = this.title.compareTo(other.title);
+                break;
+            case AUTHOR_A_Z:
+            case AUTHOR_Z_A:
+                tempResult = this.author.compareTo(other.author);
+                break;
+        }
+        if (sortType == SortType.AUTHOR_Z_A || sortType == SortType.TITLE_Z_A) {
+            return tempResult * -1;
+        }
+        return tempResult;
     }
 }

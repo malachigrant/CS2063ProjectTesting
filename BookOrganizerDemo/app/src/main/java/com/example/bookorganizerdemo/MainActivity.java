@@ -7,8 +7,12 @@ import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.RelativeLayout;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     SearchView searchView;
+    Spinner sortSpinner;
     RecyclerView recyclerView;
     BookListAdapter adapter;
     FloatingActionButton addBook;
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        sortSpinner = findViewById(R.id.sortSpinner);
         recyclerView = findViewById(R.id.recyclerView);
 
         books = new ArrayList<>();
@@ -51,6 +57,18 @@ public class MainActivity extends AppCompatActivity {
         adapter = new BookListAdapter();
         recyclerView.setAdapter(adapter);
         adapter.add(books);
+
+        sortSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                adapter.setSortType(Book.SortType.values()[i]);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                // do nothing
+            }
+        });
 
         addBook = findViewById(R.id.addBook);
         addBook.setOnClickListener(view -> {
@@ -121,10 +139,11 @@ public class MainActivity extends AppCompatActivity {
 
     public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.ViewHolder> {
 
-        private final SortedList<Book> mDataset = new SortedList<>(Book.class, new SortedList.Callback<Book>() {
+        private Book.SortType mSortType = Book.SortType.TITLE_A_Z;
+        private SortedList.Callback<Book> mCallback = new SortedList.Callback<Book>() {
             @Override
             public int compare(Book o1, Book o2) {
-                return o1.compare(o2);
+                return o1.compare(o2, mSortType);
             }
 
             @Override
@@ -156,14 +175,25 @@ public class MainActivity extends AppCompatActivity {
             public boolean areItemsTheSame(Book item1, Book item2) {
                 return item1.getID() == item2.getID();
             }
-        });
+        };
+        private SortedList<Book> mDataset = new SortedList<>(Book.class, mCallback);
 
         public BookListAdapter() {
         }
 
+        public void setSortType(Book.SortType sortType) {
+            if (mSortType != sortType) {
+                mSortType = sortType;
+                SortedList<Book> newDataset = new SortedList<>(Book.class, mCallback);
+                newDataset.addAll(books);
+                mDataset = newDataset;
+                notifyDataSetChanged();
+            }
+        }
+
         @Override
         public BookListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            TextView textView = (TextView) LayoutInflater.from(parent.getContext())
+            RelativeLayout textView = (RelativeLayout) LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_layout, parent, false);
 
             return new ViewHolder(textView);
@@ -174,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
             final Book book = mDataset.get(index);
 
             holder.mTextView.setText(book.getTitle());
+            holder.mAuthorTextView.setText(book.getAuthor());
         }
 
         @Override
@@ -215,10 +246,12 @@ public class MainActivity extends AppCompatActivity {
 
         public class ViewHolder extends RecyclerView.ViewHolder {
             public TextView mTextView;
+            public TextView mAuthorTextView;
 
-            public ViewHolder(TextView textView) {
-                super(textView);
-                mTextView = textView;
+            public ViewHolder(View itemView) {
+                super(itemView);
+                mTextView = itemView.findViewById(R.id.item_textview);
+                mAuthorTextView = itemView.findViewById(R.id.item_author_textview);
             }
         }
     }
