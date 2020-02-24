@@ -1,31 +1,26 @@
 package com.example.bookorganizerdemo;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Parcelable;
 import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.example.bookorganizerdemo.model.Book;
 import com.example.bookorganizerdemo.util.HttpRequestUtil;
-import com.example.bookorganizerdemo.util.JsonUtil;
-
-import org.apache.commons.text.StringEscapeUtils;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class AddBookActivity extends AppCompatActivity {
 
-    private static final String BASE_URL = "https://www.googleapis.com/books/v1/volumes?q=";
-    private static final String ISBN_QUERY = "isbn:";
-    private static final String TITLE_QUERY = "intitle:";
-
     private static final int SELECT_BOOK_CODE = 1;
+    private static final int SCAN_BOOK_CODE = 2;
 
     Button barcodeButton;
     Button searchButton;
@@ -39,16 +34,6 @@ public class AddBookActivity extends AppCompatActivity {
     String mId = "";
     String mTitle = "";
     String mAuthor = "";
-
-    private boolean isISBN(String str) {
-        str = str.trim();
-        if (str.length() == 10 && str.matches("^\\d{9}[\\d|X]")) {
-            return true;
-        } else if (str.length() == 13 && str.matches("^\\d{13}")) {
-            return true;
-        }
-        return false;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,14 +52,18 @@ public class AddBookActivity extends AppCompatActivity {
 
         searchButton.setOnClickListener(view -> {
             String text = editText.getText().toString();
-            httpRequestUtil.send(BASE_URL + (isISBN(text) ? ISBN_QUERY : TITLE_QUERY) + StringEscapeUtils.escapeHtml4(editText.getText().toString()),
-                    s -> {
-                        JsonUtil jsonUtil = new JsonUtil(s);
-                        List<Book> books = jsonUtil.getBooks();
-                        Intent intent = new Intent(AddBookActivity.this, BookSelectionActivity.class);
-                        intent.putParcelableArrayListExtra("books", new ArrayList(books));
-                        startActivityForResult(intent, SELECT_BOOK_CODE);
-                    });
+            HttpRequestUtil.Listener listener = books -> {
+                if (books != null) {
+                    Intent intent = new Intent(AddBookActivity.this, BookSelectionActivity.class);
+                    intent.putParcelableArrayListExtra("books", new ArrayList<Parcelable>(books));
+                    startActivityForResult(intent, SELECT_BOOK_CODE);
+                }
+            };
+            if (Book.isISBN(text)) {
+                httpRequestUtil.requestByISBN(text, listener);
+            } else {
+                httpRequestUtil.requestByTitle(text, listener);
+            }
         });
 
         addButton.setOnClickListener(view -> {
@@ -83,22 +72,38 @@ public class AddBookActivity extends AppCompatActivity {
             setResult(Activity.RESULT_OK, intent);
             finish();
         });
+
+        barcodeButton.setOnClickListener(view -> {
+            Intent intent = new Intent(AddBookActivity.this, ScannerActivity.class);
+            startActivityForResult(intent, SCAN_BOOK_CODE);
+        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (data == null) {
+            return;
+        }
         if (requestCode == SELECT_BOOK_CODE && resultCode == Activity.RESULT_OK) {
             Book result = data.getParcelableExtra("bookSelected");
-            mId = result.getID();
-            mTitle = result.getTitle();
-            mAuthor = result.getAuthor();
-            updateTextFields();
+            updateTextFields(result);
+        } else if (requestCode == SCAN_BOOK_CODE && resultCode == Activity.RESULT_OK) {
+            Book result = data.getParcelableExtra("scannedBook");
+            updateTextFields(result);
         }
     }
 
     private void updateTextFields() {
         titleField.setText(mTitle);
         authorField.setText(mAuthor);
+    }
+    private void updateTextFields(Book book) {
+        if (book != null) {
+            mId = book.getID();
+            mTitle = book.getTitle();
+            mAuthor = book.getAuthor();
+            updateTextFields();
+        }
     }
 }

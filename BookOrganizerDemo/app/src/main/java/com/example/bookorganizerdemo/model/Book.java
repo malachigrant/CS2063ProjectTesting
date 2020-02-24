@@ -12,6 +12,16 @@ public class Book implements Parcelable {
     private final String title;
     private final String author;
 
+    public static boolean isISBN(String str) {
+        str = str.trim();
+        if (str.length() == 10 && str.matches("^\\d{9}[\\d|X]")) {
+            return true;
+        } else if (str.length() == 13 && str.matches("^\\d{13}")) {
+            return true;
+        }
+        return false;
+    }
+
     public Book(String id, String title, String author) {
         this.id = id;
         this.title = title;
