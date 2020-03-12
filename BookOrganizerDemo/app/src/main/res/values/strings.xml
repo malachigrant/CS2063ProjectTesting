@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Book Organizer Demo</string>
+
+    <string-array name="sortOptions">
+        <item>Title A to Z</item>
+        <item>Title Z to A</item>
+        <item>Author A to Z</item>
+        <item>Author Z to A</item>
+    </string-array>
+</resources>

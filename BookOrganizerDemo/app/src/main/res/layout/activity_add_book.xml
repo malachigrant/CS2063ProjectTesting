@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <Button
+        android:id="@+id/barcodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Barcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:hint="Book Title or ISBN"
+        app:layout_constraintEnd_toStartOf="@+id/searchButton"
+        app:layout_constraintStart_toEndOf="@+id/barcodeButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleField"
+        app:layout_constraintBottom_toBottomOf="@id/titleField"
+        android:layout_marginLeft="12dp"
+        android:text="Title:" />
+
+    <EditText
+        android:id="@+id/titleField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="120dp"
+        app:layout_constraintLeft_toRightOf="@+id/titleLabel"
+        app:layout_constraintTop_toBottomOf="@id/barcodeButton"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/authorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/authorField"
+        app:layout_constraintBottom_toBottomOf="@id/authorField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Author:"
+        android:layout_marginLeft="12dp"/>
+    <EditText
+        android:id="@+id/authorField"
+        android:minWidth="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleField"
+        app:layout_constraintLeft_toRightOf="@id/authorLabel"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/addBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/back"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Add Book"
+        android:layout_marginBottom="24dp"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/addBook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="24dp"
+        android:text="Back"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
