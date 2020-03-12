@@ -100,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
         //  choices.
         mItemEditText.setText("");
         mNumberEditText.setText("");
+        mSearchEditText.setText("");
+        mResultsTextView.setText("No results");
+        mItemsAdapter.clear();
         hideKeyboard(this);
 
     }
