@@ -1,0 +1,194 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\011eaafaf7ead10fdb34c759db198667\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9d5b953f055c81e66bb1ec5cecf8f6bd\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a9a759458b1faf8289f97bee7b0c7d29\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\e0494d70f123d4889e5ee8ef86a62c18\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e847fefb8bc27f05d452c4cf144130b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\358ce45f820b290bab6b84114bd2730b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\cb0bcd16bef061ec3245bb5e1617e77f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\982dd0db1503dd54cb1c8274a977e0c6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6c41a656821aa05daa2752e67cd51821\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\f5ef56498a37daa129c2f00f210357dc\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9e0d88f59d26ad631c2b556ae881b30c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bd8b191d9877212e4055d2e03710eaea\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\44a5b9da7f1712a662a6a5556f4e6c20\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\4c8b74e98cb8ba4d5bc1f862666135ab\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\7c72faad0e54f7eff80bec36dc3bc238\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\48fac1773aa8842481ef2d65d8987a22\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6ee16300dccc351bf6d2c4134dcc085c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bf23f69a68345e9102b8ff70f4d28623\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a97834c5f6effef547a74b4d5c0c6963\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ef04abdf8d847eb7358635d9d704a66e\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\c1dfe6721fe7cb0b3a8637e4473c73df\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\01f1785f21a99482862c7f29679b8df9\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\38696f54e204f0f05adccf972dbcdd9a\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\0e6765c88e52a19e5333f1228e8b5404\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\455f7cc0f4a9e18966174f327ddb31db\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8607644137bf2f64688f8ec231dc0e1b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\51a61a95d90786a8ea0f65588f139bdc\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\d4ec37a297a44d4bf7353ee291e4bc89\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ffd3b165134f8ba38fa0935856bc62b5\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a1a199e328d238aafaf492067aeb337b\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\011eaafaf7ead10fdb34c759db198667\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\011eaafaf7ead10fdb34c759db198667\AndroidManifest.xml:22:5-20
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a9a759458b1faf8289f97bee7b0c7d29\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a9a759458b1faf8289f97bee7b0c7d29\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ffd3b165134f8ba38fa0935856bc62b5\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ffd3b165134f8ba38fa0935856bc62b5\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:11:9-40
+activity#mobiledev.unb.ca.roompersistencelab.MainActivity
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:12:19-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\011eaafaf7ead10fdb34c759db198667\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\011eaafaf7ead10fdb34c759db198667\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9d5b953f055c81e66bb1ec5cecf8f6bd\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9d5b953f055c81e66bb1ec5cecf8f6bd\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a9a759458b1faf8289f97bee7b0c7d29\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a9a759458b1faf8289f97bee7b0c7d29\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\e0494d70f123d4889e5ee8ef86a62c18\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\e0494d70f123d4889e5ee8ef86a62c18\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e847fefb8bc27f05d452c4cf144130b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e847fefb8bc27f05d452c4cf144130b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\358ce45f820b290bab6b84114bd2730b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\358ce45f820b290bab6b84114bd2730b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\cb0bcd16bef061ec3245bb5e1617e77f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\cb0bcd16bef061ec3245bb5e1617e77f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\982dd0db1503dd54cb1c8274a977e0c6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\982dd0db1503dd54cb1c8274a977e0c6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6c41a656821aa05daa2752e67cd51821\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6c41a656821aa05daa2752e67cd51821\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\f5ef56498a37daa129c2f00f210357dc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\f5ef56498a37daa129c2f00f210357dc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9e0d88f59d26ad631c2b556ae881b30c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\9e0d88f59d26ad631c2b556ae881b30c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bd8b191d9877212e4055d2e03710eaea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bd8b191d9877212e4055d2e03710eaea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\44a5b9da7f1712a662a6a5556f4e6c20\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\44a5b9da7f1712a662a6a5556f4e6c20\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\4c8b74e98cb8ba4d5bc1f862666135ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\4c8b74e98cb8ba4d5bc1f862666135ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\7c72faad0e54f7eff80bec36dc3bc238\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\7c72faad0e54f7eff80bec36dc3bc238\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\48fac1773aa8842481ef2d65d8987a22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\48fac1773aa8842481ef2d65d8987a22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8e7115f05ca9ceaa0476fcf398ad0244\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6ee16300dccc351bf6d2c4134dcc085c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6ee16300dccc351bf6d2c4134dcc085c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bf23f69a68345e9102b8ff70f4d28623\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\bf23f69a68345e9102b8ff70f4d28623\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a97834c5f6effef547a74b4d5c0c6963\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a97834c5f6effef547a74b4d5c0c6963\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ef04abdf8d847eb7358635d9d704a66e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ef04abdf8d847eb7358635d9d704a66e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\c1dfe6721fe7cb0b3a8637e4473c73df\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\c1dfe6721fe7cb0b3a8637e4473c73df\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\01f1785f21a99482862c7f29679b8df9\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\01f1785f21a99482862c7f29679b8df9\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\38696f54e204f0f05adccf972dbcdd9a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\38696f54e204f0f05adccf972dbcdd9a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\0e6765c88e52a19e5333f1228e8b5404\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\0e6765c88e52a19e5333f1228e8b5404\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\455f7cc0f4a9e18966174f327ddb31db\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\455f7cc0f4a9e18966174f327ddb31db\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8607644137bf2f64688f8ec231dc0e1b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\8607644137bf2f64688f8ec231dc0e1b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\51a61a95d90786a8ea0f65588f139bdc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\51a61a95d90786a8ea0f65588f139bdc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\d4ec37a297a44d4bf7353ee291e4bc89\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\d4ec37a297a44d4bf7353ee291e4bc89\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ffd3b165134f8ba38fa0935856bc62b5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\ffd3b165134f8ba38fa0935856bc62b5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a1a199e328d238aafaf492067aeb337b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\a1a199e328d238aafaf492067aeb337b\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\win10-ads\Desktop\Lab7\RoomPersistenceLabSkeleton\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\6f22625bccad56a0f38d2b0e4c526f14\AndroidManifest.xml:26:13-74
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\win10-ads\.gradle\caches\transforms-2\files-2.1\2f8921dcb7d2f318b7992455d6f7f3f8\AndroidManifest.xml:26:13-79

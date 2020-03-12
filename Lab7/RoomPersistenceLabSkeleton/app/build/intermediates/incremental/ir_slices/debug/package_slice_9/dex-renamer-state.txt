@@ -1,0 +1,4 @@
+#Thu Mar 12 09:55:39 ADT 2020
+base.0=C\:\\Users\\win10-ads\\Desktop\\Lab7\\RoomPersistenceLabSkeleton\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex
