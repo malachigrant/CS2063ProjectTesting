@@ -1,28 +1,20 @@
 package com.example.bookorganizerdemo;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,7 +27,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -156,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         return filteredBooks;
     }
 
-    public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.ViewHolder> {
+    public class BookListAdapter extends RecyclerView.Adapter<BookViewHolder> {
 
         private Book.SortType mSortType = Book.SortType.TITLE_A_Z;
         private SortedList.Callback<Book> mCallback = new SortedList.Callback<Book>() {
@@ -208,24 +199,27 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public BookListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public BookViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             RelativeLayout textView = (RelativeLayout) LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_layout, parent, false);
 
-            return new ViewHolder(textView);
+            return new BookViewHolder(textView);
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder holder, int index) {
+        public void onBindViewHolder(BookViewHolder holder, int index) {
             final Book book = mDataset.get(index);
 
-            Picasso.get() //Get the Image for the cover
-                    .load(book.getCover())
-                    // .resize(50, 50)
-                    // .centerCrop()
-                    .into(holder.imageView);
+            if (book.getCover() != null) {
+                Picasso.get() //Get the Image for the cover
+                        .load(book.getCover())
+                        .error(R.drawable.ic_camera_black_24dp) // TODO: use a better error image
+                        .resize(100, 100)
+                        .centerInside()
+                        .into(holder.mCoverImageView);
+            }
 
-            holder.mTextView.setText(book.getTitle());
+            holder.mTitleTextView.setText(book.getTitle());
             holder.mAuthorTextView.setText(book.getAuthor());
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -273,21 +267,6 @@ public class MainActivity extends AppCompatActivity {
             }
             mDataset.addAll(models);
             mDataset.endBatchedUpdates();
-        }
-
-        public class ViewHolder extends RecyclerView.ViewHolder {
-            public TextView mTextView;
-            public TextView mAuthorTextView;
-            public RelativeLayout mLayout;
-            public ImageView imageView;
-
-            public ViewHolder(View itemView) {
-                super(itemView);
-                mTextView = itemView.findViewById(R.id.item_textview);
-                mAuthorTextView = itemView.findViewById(R.id.item_author_textview);
-                mLayout = itemView.findViewById(R.id.itemLayout);
-                imageView = (ImageView) itemView.findViewById(R.id.imageView);
-            }
         }
     }
 }

@@ -8,12 +8,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.example.bookorganizerdemo.model.Book;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class BookSelectionActivity extends AppCompatActivity {
         recyclerView.setAdapter(new BookSelectionAdapter(books));
     }
 
-    private class BookSelectionAdapter extends RecyclerView.Adapter<BookSelectionAdapter.ViewHolder> {
+    private class BookSelectionAdapter extends RecyclerView.Adapter<BookViewHolder> {
 
         List<Book> mDataset;
 
@@ -41,18 +40,23 @@ public class BookSelectionActivity extends AppCompatActivity {
 
         @NonNull
         @Override
-        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        public BookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_layout, parent, false);
-            return new ViewHolder(v);
+            return new BookViewHolder(v);
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
+        public void onBindViewHolder(BookViewHolder holder, int position) {
             Book book = mDataset.get(position);
 
-            holder.mTextView.setText(book.getTitle());
+            holder.mTitleTextView.setText(book.getTitle());
             holder.mAuthorTextView.setText(book.getAuthor());
+            Picasso.get()
+                    .load(book.getCover())
+                    .resize(100, 100)
+                    .centerInside()
+                    .into(holder.mCoverImageView);
 
             holder.mView.setOnClickListener(view -> {
                 Intent result = new Intent();
@@ -65,19 +69,6 @@ public class BookSelectionActivity extends AppCompatActivity {
         @Override
         public int getItemCount() {
             return mDataset.size();
-        }
-
-        public class ViewHolder extends RecyclerView.ViewHolder {
-            public View mView;
-            public TextView mTextView;
-            public TextView mAuthorTextView;
-
-            public ViewHolder(View itemView) {
-                super(itemView);
-                mView = itemView;
-                mTextView = itemView.findViewById(R.id.item_textview);
-                mAuthorTextView = itemView.findViewById(R.id.item_author_textview);
-            }
         }
     }
 }

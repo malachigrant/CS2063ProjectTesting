@@ -1,5 +1,7 @@
 package com.example.bookorganizerdemo.util;
 
+import android.util.Log;
+
 import com.example.bookorganizerdemo.model.Book;
 
 import org.json.JSONArray;
@@ -21,8 +23,12 @@ public class JsonUtil {
                 String id = item.getString("id");
                 JSONObject volumeInfo = item.getJSONObject("volumeInfo");
                 String title = volumeInfo.getString("title");
-                String author = join(volumeInfo.getJSONArray("authors"), ", ");
-                Book book = new Book(id, title, author);
+                String author = volumeInfo.has("authors") ? join(volumeInfo.getJSONArray("authors"), ", ") : "";
+
+                JSONObject imageLinks = volumeInfo.getJSONObject("imageLinks");
+                String cover = imageLinks.getString("smallThumbnail");
+                Log.e("hm", cover);
+                Book book = new Book(id, title, author, cover);
                 mBooks.add(book);
             }
         } catch (JSONException e) {

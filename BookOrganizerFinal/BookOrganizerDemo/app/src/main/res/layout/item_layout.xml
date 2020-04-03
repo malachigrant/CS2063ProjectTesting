@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@+id/itemLayout"
     android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
+    <ImageView android:id="@+id/image_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"/>
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_toRightOf="@id/image_cover"
         android:id="@+id/item_textview">
     </TextView>
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@id/image_cover"
         android:id="@+id/item_author_textview"
         android:layout_below="@id/item_textview"/>
     <View
@@ -22,5 +28,6 @@
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
         android:layout_marginHorizontal="10dp"
-        android:layout_below="@id/item_author_textview"/>
+        android:layout_below="@id/image_cover"
+        android:id="@+id/separator"/>
 </RelativeLayout>

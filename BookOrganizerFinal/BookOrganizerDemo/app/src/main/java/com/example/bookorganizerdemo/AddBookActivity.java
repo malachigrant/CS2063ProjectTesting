@@ -34,6 +34,7 @@ public class AddBookActivity extends AppCompatActivity {
     String mId = "";
     String mTitle = "";
     String mAuthor = "";
+    String mCover = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class AddBookActivity extends AppCompatActivity {
 
         addButton.setOnClickListener(view -> {
             Intent intent = new Intent();
-            intent.putExtra("book", new Book(mId, mTitle, mAuthor));
+            intent.putExtra("book", new Book(mId, mTitle, mAuthor, mCover));
             setResult(Activity.RESULT_OK, intent);
             finish();
         });
@@ -107,6 +108,7 @@ public class AddBookActivity extends AppCompatActivity {
             mId = book.getApiId();
             mTitle = book.getTitle();
             mAuthor = book.getAuthor();
+            mCover = book.getCover();
             updateTextFields();
         }
     }
