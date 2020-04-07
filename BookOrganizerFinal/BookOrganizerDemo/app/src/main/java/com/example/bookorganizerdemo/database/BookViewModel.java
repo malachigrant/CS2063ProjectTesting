@@ -8,10 +8,7 @@ import androidx.lifecycle.LiveData;
 
 import com.example.bookorganizerdemo.model.Book;
 
-import java.util.ConcurrentModificationException;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
 
 public class BookViewModel extends AndroidViewModel {
     private BookRepository bookRepository;
@@ -27,8 +24,8 @@ public class BookViewModel extends AndroidViewModel {
         return mBooks;
     }
 
-    public void insert(String apiId, String title, String author, String cover) {
-        bookRepository.insertRecord(apiId, title, author, cover);
+    public void insert(Book book) {
+        bookRepository.insertRecord(book);
     }
 
     public void deleteBook(Book book) {

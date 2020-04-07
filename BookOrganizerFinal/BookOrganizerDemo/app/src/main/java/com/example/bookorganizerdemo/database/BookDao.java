@@ -14,21 +14,15 @@ import java.util.List;
 
 @Dao
 public interface BookDao {
-    @Query("SELECT * FROM books WHERE title LIKE :name")
-    public abstract List<Book> searchBooks(String name);
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    public void insertBooks(Book... books);
+    void insertBooks(Book... books);
 
     @Query("SELECT * from books ORDER BY title ASC")
-    public LiveData<List<Book>> listAllRecords();
-
-    @Query("SELECT cover from books WHERE title LIKE :name")
-    public abstract String findCover(String name);
+    LiveData<List<Book>> listAllRecords();
 
     @Update
-    public void updateBook(Book book);
+    void updateBook(Book book);
 
     @Delete
-    public void deleteBook(Book book);
+    void deleteBook(Book book);
 }

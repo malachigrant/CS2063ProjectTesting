@@ -15,6 +15,7 @@ import android.widget.Spinner;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
@@ -63,11 +64,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // books.add(new Book("1", "Title 1", "Author"));
-        // books.add(new Book("2", "A book", "auth"));
         adapter = new BookListAdapter();
         recyclerView.setAdapter(adapter);
-        // adapter.add(books);
 
         sortSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -111,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == ADD_BOOK_RESULT_CODE && resultCode == Activity.RESULT_OK) {
             Book book = data.getParcelableExtra("book");
-            mBookViewModel.insert(book.getApiId(), book.getTitle(), book.getAuthor(), book.getCover());
+            mBookViewModel.insert(book);
         }
     }
 
@@ -210,13 +208,15 @@ public class MainActivity extends AppCompatActivity {
         public void onBindViewHolder(BookViewHolder holder, int index) {
             final Book book = mDataset.get(index);
 
-            if (book.getCover() != null) {
+            if (book.getCover() != null && !book.getCover().isEmpty()) {
                 Picasso.get() //Get the Image for the cover
                         .load(book.getCover())
-                        .error(R.drawable.ic_camera_black_24dp) // TODO: use a better error image
+                        .error(R.drawable.ic_image_24px) // TODO: use a better error image
                         .resize(100, 100)
                         .centerInside()
                         .into(holder.mCoverImageView);
+            } else {
+                holder.mCoverImageView.setImageDrawable(ContextCompat.getDrawable(MainActivity.this, R.drawable.ic_image_24px));
             }
 
             holder.mTitleTextView.setText(book.getTitle());
@@ -237,24 +237,8 @@ public class MainActivity extends AppCompatActivity {
             return mDataset.size();
         }
 
-        public void add(Book model) {
-            mDataset.add(model);
-        }
-
-        public void remove(Book model) {
-            mDataset.remove(model);
-        }
-
         public void add(List<Book> models) {
             mDataset.addAll(models);
-        }
-
-        public void remove(List<Book> models) {
-            mDataset.beginBatchedUpdates();
-            for (Book model : models) {
-                mDataset.remove(model);
-            }
-            mDataset.endBatchedUpdates();
         }
 
         public void replaceAll(List<Book> models) {

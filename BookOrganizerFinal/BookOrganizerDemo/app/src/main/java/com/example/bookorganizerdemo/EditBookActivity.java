@@ -1,16 +1,15 @@
 package com.example.bookorganizerdemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.bookorganizerdemo.database.BookViewModel;
 import com.example.bookorganizerdemo.model.Book;
@@ -48,7 +47,11 @@ public class EditBookActivity extends AppCompatActivity {
                 Book book = getIntent().getParcelableExtra("book");
                 book.setTitle(bookDataFragment.getTitle());
                 book.setAuthor(bookDataFragment.getAuthor());
-                // TODO: Add more fields
+                book.setComments(bookDataFragment.getComments());
+                book.setRating(bookDataFragment.getRating());
+                book.setLentTo(bookDataFragment.getLentTo());
+                book.setLentStartDate(bookDataFragment.getLentStartDate());
+                book.setLentEndDate(bookDataFragment.getLentEndDate());
                 mBookViewModel.updateBook(book);
                 finish();
             }
@@ -64,7 +67,11 @@ public class EditBookActivity extends AppCompatActivity {
 
             args.putString(BookDataFragment.TITLE, book.getTitle());
             args.putString(BookDataFragment.AUTHOR, book.getAuthor());
-            // TODO: Add more fields here.
+            args.putString(BookDataFragment.COMMENTS, book.getComments());
+            args.putInt(BookDataFragment.RATING, book.getRating());
+            args.putString(BookDataFragment.LENT_TO, book.getLentTo());
+            args.putString(BookDataFragment.LENT_START_DATE, book.getLentStartDate());
+            args.putString(BookDataFragment.LENT_END_DATE, book.getLentEndDate());
 
             bookDataFragment.setArguments(args);
             fragmentManager.beginTransaction().replace(R.id.editFragment, bookDataFragment, "Book").commit();

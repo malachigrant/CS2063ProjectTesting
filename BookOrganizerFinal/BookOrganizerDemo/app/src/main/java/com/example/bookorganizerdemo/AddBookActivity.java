@@ -1,24 +1,22 @@
 package com.example.bookorganizerdemo;
 
 import android.Manifest;
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.app.NavUtils;
-import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.bookorganizerdemo.model.Book;
@@ -30,6 +28,7 @@ public class AddBookActivity extends AppCompatActivity {
 
     private static final int SELECT_BOOK_CODE = 1;
     private static final int SCAN_BOOK_CODE = 2;
+    private static final int CAMERA_PERMISSION_CODE = 3;
 
     Button barcodeButton;
     Button searchButton;
@@ -44,6 +43,11 @@ public class AddBookActivity extends AppCompatActivity {
     String mTitle = "";
     String mAuthor = "";
     String mCover = "";
+    String mComments = "";
+    int mRating = 0;
+    String mLentTo = "";
+    String mLentStartDate = "";
+    String mLentEndDate = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,15 +92,40 @@ public class AddBookActivity extends AppCompatActivity {
         addButton.setOnClickListener(view -> {
             Intent intent = new Intent();
             Book newBook = new Book(mApiId, bookDataFragment.getTitle(), bookDataFragment.getAuthor(), mCover);
+            newBook.setComments(bookDataFragment.getComments());
+            newBook.setRating(bookDataFragment.getRating());
+            newBook.setLentTo(bookDataFragment.getLentTo());
+            newBook.setLentStartDate(bookDataFragment.getLentStartDate());
+            newBook.setLentEndDate(bookDataFragment.getLentEndDate());
             intent.putExtra("book", newBook);
             setResult(Activity.RESULT_OK, intent);
             finish();
         });
 
         barcodeButton.setOnClickListener(view -> {
-            Intent intent = new Intent(AddBookActivity.this, ScannerActivity.class);
-            startActivityForResult(intent, SCAN_BOOK_CODE);
+            if (ContextCompat.checkSelfPermission(AddBookActivity.this, Manifest.permission.CAMERA)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, CAMERA_PERMISSION_CODE);
+            } else {
+                openBarcodeScanner();
+            }
         });
+    }
+
+    private void openBarcodeScanner() {
+        Intent intent = new Intent(AddBookActivity.this, ScannerActivity.class);
+        startActivityForResult(intent, SCAN_BOOK_CODE);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == CAMERA_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                openBarcodeScanner();
+            } else {
+                Toast.makeText(AddBookActivity.this, "Camera permission is required to scan barcode", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     @Override
@@ -118,7 +147,11 @@ public class AddBookActivity extends AppCompatActivity {
         Bundle arguments = new Bundle();
         arguments.putString(BookDataFragment.TITLE, mTitle);
         arguments.putString(BookDataFragment.AUTHOR, mAuthor);
-        // TODO: Add more fields here.
+        arguments.putString(BookDataFragment.COMMENTS, mComments);
+        arguments.putInt(BookDataFragment.RATING, mRating);
+        arguments.putString(BookDataFragment.LENT_TO, mLentTo);
+        arguments.putString(BookDataFragment.LENT_START_DATE, mLentStartDate);
+        arguments.putString(BookDataFragment.LENT_END_DATE, mLentEndDate);
         bookDataFragment = new BookDataFragment();
         bookDataFragment.setArguments(arguments);
         getSupportFragmentManager().beginTransaction()
@@ -132,6 +165,11 @@ public class AddBookActivity extends AppCompatActivity {
             mTitle = book.getTitle();
             mAuthor = book.getAuthor();
             mCover = book.getCover();
+            mComments = book.getComments();
+            mRating = book.getRating();
+            mLentTo = book.getLentTo();
+            mLentStartDate = book.getLentStartDate();
+            mLentEndDate = book.getLentEndDate();
             updateTextFields();
         }
     }

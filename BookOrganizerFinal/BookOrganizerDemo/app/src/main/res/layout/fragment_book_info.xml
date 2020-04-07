@@ -4,7 +4,8 @@
     android:id="@+id/bookFragment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -76,7 +77,6 @@
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="12dp"
             android:minWidth="120dp" />
     </LinearLayout>
 
@@ -102,12 +102,14 @@
             <RadioGroup
                 android:layout_width="123dp"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/radioGroup">
 
                 <RadioButton
                     android:id="@+id/unreadButton"
                     android:layout_width="match_parent"
                     android:layout_height="21dp"
+                    android:checked="true"
                     android:text="Unread" />
 
                 <RadioButton
@@ -157,7 +159,7 @@
             android:text="Lent To (Optional):" />
 
         <EditText
-            android:id="@+id/lentToFeild"
+            android:id="@+id/lentToField"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -178,7 +180,7 @@
             android:text="From (Optional):" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/lentStartDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -188,9 +190,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="202dp"
+        android:layout_width="200dp"
         android:layout_height="67dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/untilText"
@@ -200,7 +203,7 @@
             android:text="Until (Optional):" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/lentEndDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

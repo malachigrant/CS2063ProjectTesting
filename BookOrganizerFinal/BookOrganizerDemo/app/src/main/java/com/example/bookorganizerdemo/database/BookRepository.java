@@ -18,12 +18,7 @@ public class BookRepository {
         mBooks = bookDao.listAllRecords();
     }
 
-    public void insertRecord(String apiId, String title, String author, String cover) {
-        Book book = new Book(apiId, title, author, cover);
-        insertRecord(book);
-    }
-
-    private void insertRecord(final Book book) {
+    public void insertRecord(final Book book) {
         AppDatabase.databaseWriterExecutor.execute(() -> {
             bookDao.insertBooks(book);
         });
@@ -32,8 +27,6 @@ public class BookRepository {
     public LiveData<List<Book>> listAllRecords() {
         return mBooks;
     }
-
-    public String getCover(final Book book) { return book.getCover(); }
 
     public void deleteBook(Book book) {
         AppDatabase.databaseWriterExecutor.execute(() -> {

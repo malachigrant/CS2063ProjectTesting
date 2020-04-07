@@ -25,6 +25,16 @@ public class Book implements Parcelable {
     private String author;
     @ColumnInfo(name = "cover")
     private String cover;
+    @ColumnInfo(name = "comments")
+    private String comments;
+    @ColumnInfo(name = "rating")
+    private int rating;
+    @ColumnInfo(name = "lentTo")
+    private String lentTo;
+    @ColumnInfo(name = "lentStartDate")
+    private String lentStartDate;
+    @ColumnInfo(name = "lentEndDate")
+    private String lentEndDate;
 
     public static boolean isISBN(String str) {
         str = str.trim();
@@ -58,6 +68,11 @@ public class Book implements Parcelable {
         title = in.readString();
         author = in.readString();
         cover = in.readString();
+        comments = in.readString();
+        rating = in.readInt();
+        lentTo = in.readString();
+        lentStartDate = in.readString();
+        lentEndDate = in.readString();
     }
 
     @Override
@@ -67,6 +82,11 @@ public class Book implements Parcelable {
         dest.writeString(title);
         dest.writeString(author);
         dest.writeString(cover);
+        dest.writeString(comments);
+        dest.writeInt(rating);
+        dest.writeString(lentTo);
+        dest.writeString(lentStartDate);
+        dest.writeString(lentEndDate);
     }
 
     public static final Creator<Book> CREATOR = new Creator<Book>() {
@@ -87,20 +107,65 @@ public class Book implements Parcelable {
     public String getApiId() {
         return apiId;
     }
-    public void setApiId(String apiId) { this.apiId = apiId; }
+    public void setApiId(String apiId) {
+        this.apiId = apiId;
+    }
 
     public String getTitle() {
         return title;
     }
-    public void setTitle(String title) { this.title = title; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getAuthor() {
         return author;
     }
-    public void setAuthor(String author) { this.author = author; }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-    public String getCover() { return cover; }
-    public void setCover(String cover) { this.cover = cover; }
+    public String getCover() {
+        return cover;
+    }
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public String getLentTo() {
+        return lentTo;
+    }
+    public void setLentTo(String lentTo) {
+        this.lentTo = lentTo;
+    }
+
+    public String getLentStartDate() {
+        return lentStartDate;
+    }
+    public void setLentStartDate(String lentStartDate) {
+        this.lentStartDate = lentStartDate;
+    }
+
+    public String getLentEndDate() {
+        return lentEndDate;
+    }
+    public void setLentEndDate(String lentEndDate) {
+        this.lentEndDate = lentEndDate;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
 
     @Override
     public int describeContents() {

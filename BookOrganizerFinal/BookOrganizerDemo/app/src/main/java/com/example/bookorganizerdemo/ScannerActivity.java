@@ -37,7 +37,6 @@ public class ScannerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
-        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, 0);
 
         button = findViewById(R.id.scanButton);
         surface = findViewById(R.id.cameraSurface);
