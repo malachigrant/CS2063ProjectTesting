@@ -1,11 +1,14 @@
 package com.example.bookorganizerdemo;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +17,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -29,11 +33,11 @@ public class AddBookActivity extends AppCompatActivity {
 
     Button barcodeButton;
     Button searchButton;
-    Button backButton;
     Button addButton;
     EditText editText;
     HttpRequestUtil httpRequestUtil;
     BookDataFragment bookDataFragment;
+
 
     int mId = -1;
     String mApiId = "";
@@ -43,12 +47,13 @@ public class AddBookActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_book);
 
         barcodeButton = findViewById(R.id.barcodeButton);
         searchButton = findViewById(R.id.searchButton);
-        backButton = findViewById(R.id.back);
         addButton = findViewById(R.id.addBook);
         editText = findViewById(R.id.editText);
 
@@ -85,10 +90,6 @@ public class AddBookActivity extends AppCompatActivity {
             Book newBook = new Book(mApiId, bookDataFragment.getTitle(), bookDataFragment.getAuthor(), mCover);
             intent.putExtra("book", newBook);
             setResult(Activity.RESULT_OK, intent);
-            finish();
-        });
-
-        backButton.setOnClickListener(view -> {
             finish();
         });
 
@@ -133,5 +134,20 @@ public class AddBookActivity extends AppCompatActivity {
             mCover = book.getCover();
             updateTextFields();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }

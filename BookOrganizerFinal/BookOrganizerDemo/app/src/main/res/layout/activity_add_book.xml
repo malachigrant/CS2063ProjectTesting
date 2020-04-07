@@ -88,14 +88,6 @@
                 android:layout_marginBottom="24dp"
                 android:text="Add Book" />
 
-            <Button
-                android:id="@+id/back"
-                android:layout_width="71dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/holo_red_light"
-                android:text="Back"
-                android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
 
         </LinearLayout>
     </ScrollView>

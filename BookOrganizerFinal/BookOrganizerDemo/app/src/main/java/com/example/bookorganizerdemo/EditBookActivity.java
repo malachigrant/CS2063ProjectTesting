@@ -7,6 +7,8 @@ import androidx.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +17,6 @@ import com.example.bookorganizerdemo.model.Book;
 
 public class EditBookActivity extends AppCompatActivity {
 
-    private Button backButton;
     private Button saveButton;
     private Button deleteButton;
     private BookDataFragment  bookDataFragment;
@@ -26,18 +27,12 @@ public class EditBookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_book);
 
-        backButton = findViewById(R.id.back);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         saveButton = findViewById(R.id.saveBook);
         deleteButton = findViewById(R.id.deleteBook);
 
         mBookViewModel = new ViewModelProvider(this).get(BookViewModel.class);
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,5 +69,20 @@ public class EditBookActivity extends AppCompatActivity {
             bookDataFragment.setArguments(args);
             fragmentManager.beginTransaction().replace(R.id.editFragment, bookDataFragment, "Book").commit();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
