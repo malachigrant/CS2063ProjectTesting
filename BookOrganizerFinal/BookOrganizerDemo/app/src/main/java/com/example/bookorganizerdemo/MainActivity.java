@@ -224,9 +224,9 @@ public class MainActivity extends AppCompatActivity {
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // Currently clicking on a book deletes it from the list.
-                    // TODO: Change this to open the book detail view instead of deleting the item.
-                    mBookViewModel.deleteBook(book);
+                    Intent intent = new Intent(MainActivity.this, EditBookActivity.class);
+                    intent.putExtra("book", book);
+                    startActivity(intent);
                 }
             });
 

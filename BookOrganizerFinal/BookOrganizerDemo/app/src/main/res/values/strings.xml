@@ -8,13 +8,13 @@
         <item>Author Z to A</item>
     </string-array>
 
-    <string name ="AddTitle1">Pick One of Three</string>
-    <string name ="AddTitle2">Search Google Books</string>
-    <string name ="AddTitle3">Scan Book Barcode</string>
-    <string name ="AddTitle4">Manual Input</string>
-    <string name ="BookTitleOrISBN">Book Title or ISBN</string>
-    <string name ="SearchButton">Search</string>
-    <string name ="ScanButton">Scan Barcode</string>
-    <string name ="titleText">Title:</string>
+    <string name="AddTitle1">Pick One of Three</string>
+    <string name="AddTitle2">Search Google Books</string>
+    <string name="AddTitle3">Scan Book Barcode</string>
+    <string name="AddTitle4">Manual Input</string>
+    <string name="BookTitleOrISBN">Book Title or ISBN</string>
+    <string name="SearchButton">Search</string>
+    <string name="ScanButton">Scan Barcode</string>
+    <string name="titleText">Title:</string>
 
 </resources>

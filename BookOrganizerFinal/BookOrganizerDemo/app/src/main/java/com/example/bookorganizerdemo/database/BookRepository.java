@@ -40,4 +40,10 @@ public class BookRepository {
             bookDao.deleteBook(book);
         });
     }
+
+    public void updateBook(Book book) {
+        AppDatabase.databaseWriterExecutor.execute(() -> {
+            bookDao.updateBook(book);
+        });
+    }
 }

@@ -6,6 +6,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import com.example.bookorganizerdemo.model.Book;
 
@@ -24,6 +25,9 @@ public interface BookDao {
 
     @Query("SELECT cover from books WHERE title LIKE :name")
     public abstract String findCover(String name);
+
+    @Update
+    public void updateBook(Book book);
 
     @Delete
     public void deleteBook(Book book);

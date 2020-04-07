@@ -53,6 +53,7 @@ public class Book implements Parcelable {
     }
 
     protected Book(Parcel in) {
+        id = in.readInt();
         apiId = in.readString();
         title = in.readString();
         author = in.readString();
@@ -61,6 +62,7 @@ public class Book implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int i) {
+        dest.writeInt(id);
         dest.writeString(apiId);
         dest.writeString(title);
         dest.writeString(author);

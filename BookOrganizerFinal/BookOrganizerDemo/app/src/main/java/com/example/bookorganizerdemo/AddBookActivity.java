@@ -5,12 +5,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.bookorganizerdemo.model.Book;
 import com.example.bookorganizerdemo.util.HttpRequestUtil;
@@ -27,11 +32,11 @@ public class AddBookActivity extends AppCompatActivity {
     Button backButton;
     Button addButton;
     EditText editText;
-    EditText titleField;
-    EditText authorField;
     HttpRequestUtil httpRequestUtil;
+    BookDataFragment bookDataFragment;
 
-    String mId = "";
+    int mId = -1;
+    String mApiId = "";
     String mTitle = "";
     String mAuthor = "";
     String mCover = "";
@@ -46,8 +51,16 @@ public class AddBookActivity extends AppCompatActivity {
         backButton = findViewById(R.id.back);
         addButton = findViewById(R.id.addBook);
         editText = findViewById(R.id.editText);
-        titleField = findViewById(R.id.titleField);
-        authorField = findViewById(R.id.authorField);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        bookDataFragment = (BookDataFragment) fragmentManager.findFragmentByTag("Book");
+        if (bookDataFragment == null) {
+            bookDataFragment = new BookDataFragment();
+            Bundle args = new Bundle();
+
+            bookDataFragment.setArguments(args);
+            fragmentManager.beginTransaction().replace(R.id.bookFragment, bookDataFragment, "Book").commit();
+        }
 
         httpRequestUtil = new HttpRequestUtil(this);
 
@@ -69,7 +82,8 @@ public class AddBookActivity extends AppCompatActivity {
 
         addButton.setOnClickListener(view -> {
             Intent intent = new Intent();
-            intent.putExtra("book", new Book(mId, mTitle, mAuthor, mCover));
+            Book newBook = new Book(mApiId, bookDataFragment.getTitle(), bookDataFragment.getAuthor(), mCover);
+            intent.putExtra("book", newBook);
             setResult(Activity.RESULT_OK, intent);
             finish();
         });
@@ -100,12 +114,20 @@ public class AddBookActivity extends AppCompatActivity {
     }
 
     private void updateTextFields() {
-        titleField.setText(mTitle);
-        authorField.setText(mAuthor);
+        Bundle arguments = new Bundle();
+        arguments.putString(BookDataFragment.TITLE, mTitle);
+        arguments.putString(BookDataFragment.AUTHOR, mAuthor);
+        // TODO: Add more fields here.
+        bookDataFragment = new BookDataFragment();
+        bookDataFragment.setArguments(arguments);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.bookFragment, bookDataFragment)
+                .commit();
     }
     private void updateTextFields(Book book) {
         if (book != null) {
-            mId = book.getApiId();
+            mId = book.getId();
+            mApiId = book.getApiId();
             mTitle = book.getTitle();
             mAuthor = book.getAuthor();
             mCover = book.getCover();

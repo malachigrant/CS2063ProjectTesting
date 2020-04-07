@@ -27,7 +27,6 @@ public class JsonUtil {
 
                 JSONObject imageLinks = volumeInfo.getJSONObject("imageLinks");
                 String cover = imageLinks.getString("smallThumbnail");
-                Log.e("hm", cover);
                 Book book = new Book(id, title, author, cover);
                 mBooks.add(book);
             }

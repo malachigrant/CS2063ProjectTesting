@@ -34,4 +34,8 @@ public class BookViewModel extends AndroidViewModel {
     public void deleteBook(Book book) {
         bookRepository.deleteBook(book);
     }
+
+    public void updateBook(Book book) {
+        bookRepository.updateBook(book);
+    }
 }
